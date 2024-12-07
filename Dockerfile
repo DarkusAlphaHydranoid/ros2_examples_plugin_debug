@@ -1,7 +1,7 @@
 FROM ros:rolling-ros-base
 
 RUN apt update && \
-    apt install ros-class-loader-dbgsym -y && \
+    apt install ros-rolling-class-loader-dbgsym -y && \
     apt install gdb git -y
 
 RUN mkdir /home/ws/src -p && \
